@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import DataFetching from "./DataFetching";
 import "./App.css";
 const App = () => {
