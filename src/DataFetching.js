@@ -2,12 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 const DataFetching = () => {
   const [listOfUsers, setlistOfUsers] = useState([]);
-  const [id, setid] = useState({});
   useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/users")
+    axios.get("https://jsonplaceholder.typicode.com/users")
       .then((res) => {
-        console.log(res);
         setlistOfUsers(res.data);
       })
       .catch((err) => {
